@@ -98,7 +98,7 @@ section {
 
 #menu-btn{
     cursor:pointer;
-    color:var(white);
+    color:var(--white);
     font-size: 40px;
     margin-right: -150px;
     display: none;      /*iskljucio si display ovde - nema dunGmeta desnog*/ 
@@ -113,19 +113,63 @@ section {
 
 
 
-/* Media Queries */
+/* Media Queries - mob opti */
 @media (max-width:991px) {
+   
     html {
-        font-size: 90%;
+        font-size: 50%;
+    }
+
+    #menu-btn{
+        margin-right: 0px;
+        display: inline-block; 
+    }
+
+    .header .flex .logo {
+       
+        margin-left:  0px;
+    }
+    
+}
+
+@media (max-width:768px) {
+
+    #menu-btn{
+        margin-right: 0px;
+        display: inline-block; 
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid var(--light-white);
+        border-bottom: 1px solid var(--light-white);
+        background-color: var(--light-bg);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 20px;
     }
 }
 
 @media (max-width:450px) {
 
-    html {
-        font-size: 50%;
-    }
+
 }
+
+
 
 
 
