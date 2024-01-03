@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root{
+    --green:#00E77F;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:#3d3d3d;
+    --light-bg:#575757;
+    --purple:#3a19b1;
+    --blue:#1c00b8;
+
+
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.1s linear;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background-color: var(--white);
+    color:var(--black)
+}
+
+html {
+    font-size: 100%;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}    
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+    border-radius: 80px;
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--light-bg);
+ 
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo {
+    font-size: 40px;
+    color:var(--white);
+    margin-left: -200px;
+    padding-right: 0px;
+    
+}
+
+.header .flex .navbar a{
+    margin-left: 50px;
+    color:var(--light-white);
+    font-size:32px; 
+    
+}
+
+.header .flex .navbar a:hover{
+    color:var(--green);
+}
+
+#menu-btn{
+    cursor:pointer;
+    color:var(white);
+    font-size: 40px;
+    margin-right: -150px;
+    display: none;      /*iskljucio si display ovde - nema dunGmeta desnog*/ 
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width:991px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+ 
