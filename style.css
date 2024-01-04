@@ -60,6 +60,8 @@ section {
     padding: 30px;
 }
 
+
+
 .btn{
     display: inline-block;
     margin-top: 15px;
@@ -74,7 +76,9 @@ section {
 .btn:hover{
     background-color:var(--white);
     color:var(--black);
-
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--green);
+  
 }
 
 .header {
@@ -97,9 +101,13 @@ section {
 .header .flex .logo {
     font-size: 40px;
     color:var(--white);
-    margin-left: -200px;
-    padding-right: 0px;
+    transition: 1.0s;
     
+}
+
+.header .flex .logo:hover {
+    color: var(--green);
+    transform: scale(1.5);
 }
 
 .header .flex .navbar a{
@@ -170,7 +178,9 @@ section {
 .home .para p {
     color: var(--white);
     font-size: 15px;
+    
 }
+
 
     /* COUNTER SECTION *  za one kocke 4 ispod kod (ova 4 boxc i box) */
 
@@ -197,12 +207,14 @@ section {
 .count .box-container .box i{
     font-size: 50px;
     color: var(--green);
+    
 }
 
 
 .count .box-container .box:hover{
     color: var(--white);
     transform: scale(1.1);
+    box-shadow: 0 0 15px var(--green);
 }
 
 /* About Section */
@@ -218,7 +230,7 @@ section {
 
 .about .row .image img {
     width: 500px;
-
+    height: 500px;
 }
 
 .about .row .content {
@@ -240,6 +252,72 @@ section {
 
 
 
+.courses h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    color:var(--white);
+    padding-left: 370px;
+    padding-top: 50px;
+}
+
+.courses h1 span {
+    color: var(--green);
+}
+
+.courses .swiper {
+    width: 500px;
+    background-color:var(--light-bg);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.courses .swiper img {
+    height: 400px;
+    width: 500px;
+}
+
+.courses .swiper h3 {
+    margin: 25px 0;
+    font-size: 30px;
+    color: var(--white);
+    
+}
+
+.courses .swiper p {
+    line-height: 2;
+    font-size: 30px;
+    color: var(--light-white);
+}
+
+.courses .swiper a{
+    font-size: 20px;
+    color: var(--white);
+    border-radius: 50px;
+    background-color: var(--black);
+    padding: 5px 100px;
+    transition: 0.1s;
+}
+
+.courses .swiper a:hover {
+    box-shadow: 0 0 15px var(--green);
+    background-color: var(--white);
+    color: var(--black);
+    transform: rotate(360deg);
+
+
+}
+
+.swiper {
+    width: 700px;
+    height: 600px;
+    background-color: var(--light-bg);
+    border-radius: 50px;
+    box-shadow: 0 0 15px var(--green);
+  }
+
+
+  
 
 
 

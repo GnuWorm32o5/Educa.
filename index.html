@@ -8,8 +8,12 @@
     <!-- Font awesome link--> 
 <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
 
-<!-- Custom Css File Link -->
-<link rel="stylesheet" href="style.css"> 
+    <!-- Swiper JS-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Custom Css File Link -->
+ <link rel="stylesheet" href="style.css"> 
+
 </head>
 <body>
  
@@ -26,7 +30,7 @@
                 <a href="#about"> About </a>
                 <a href="#courses"> Courses </a>
                 <a href="#teachers"> Teachers </a>
-                <a href="#reviews"> Home </a>
+                <a href="#reviews"> Reviews </a>
                 <a href="#contac"> Contact </a>
             </nav>
 
@@ -50,7 +54,7 @@
 
             <div class="content">
                 <h3> Online <span> education</span></h3>
-                <a href="#start_here" class="btn"> Start here </a>
+                <a href="#about" class="btn"> Start here </a>
             </div>
 
             
@@ -136,9 +140,71 @@
         </div>
     <!-- About Section Ends-->
     <!-- Courses Section Starts-->
+
+        <section class="courses" id="courses"> 
+
+            <h1 class="heading"> Our <span> courses </span> </h1>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                    <img src="resources/cours1.png" alt="">
+                    <h3> Web development</h3>
+                        <p> For as low as 499.00€</p>
+                        <a href="#about" class="btn-slider" id="btn-slider"> Enroll for Web Dev </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="resources/cours2.png" alt="">
+                        <h3> Digital Marketing </h3>
+                        <p>  For as low as 249.00€</p>
+                        <a href="#about" class="btn-slider" id="btn-slider"> Enroll for Marketing</a>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <img src="resources/cours3.png" alt="">
+                        <h3> Ethical Hacking and Security</h3>
+                        <p> For as low as 799.00€</p>
+                        <a href="#about" class="btn-slider" id="btn-slider"> Enroll for Hacking </a>
+                    </div>
+                    
+                    <div class="swiper-slide ">
+                        <img src="resources/cours4.png" alt="">
+                        <h3> Graphic Design</h3>
+                        <p> For As low as 249€.00</p>
+                        <a href="#about" class="btn-slider" id="btn-slider"> Enroll for UI/UX </a>
+                    </div>
+                
+
+                </div>
+
+                
+            <div class="swiper-pagination"> </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+       
+
     <!-- Courses Section Ends-->
 
-
+    <!-- Swiper JS Link  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS File-->
 <script src="scirpt.js" > </script>
 
