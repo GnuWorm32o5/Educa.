@@ -265,16 +265,18 @@ section {
 }
 
 .courses .swiper {
-    width: 500px;
-    background-color:var(--light-bg);
+    width: 1500px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 80px;
+    left: -200px;  
 }
+
 
 .courses .swiper img {
     height: 400px;
     width: 500px;
+    
 }
 
 .courses .swiper h3 {
@@ -303,21 +305,78 @@ section {
     box-shadow: 0 0 15px var(--green);
     background-color: var(--white);
     color: var(--black);
-    transform: rotate(360deg);
 
 
 }
 
+.courses .swiper .swiper-wrapper {
+    background-color: var(--black);
+}
+
+
+
 .swiper {
     width: 700px;
     height: 600px;
-    background-color: var(--light-bg);
     border-radius: 50px;
     box-shadow: 0 0 15px var(--green);
+   
   }
+
+  .swiper-pagination-bullet-active{
+    background-color: var(--green);
+
+  }
+
+  /* Teachers */
+
+  .teacher h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    color:var(--white);
+    padding-left: 370px;
+    padding-top: 50px;
+}
+
+.teacher h1 span {
+    color: var(--green);
+}
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
