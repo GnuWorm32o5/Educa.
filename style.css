@@ -103,9 +103,9 @@ section {
 }
 
 .header .flex .navbar a{
-    margin-left: 50px;
+    margin-left: 25px;
     color:var(--light-white);
-    font-size:32px; 
+    font-size:22px; 
     
 }
 
@@ -154,8 +154,17 @@ section {
     
 }
 
+.home .row .content h3:hover{
+    color: var(--green);
+}
+
 .home .row .content h3 span {
     color: var(--green);
+    transition: 0.4s;
+}
+
+.home .row .content h3 span:hover{
+    color: var(--white);
 }
 
 .home .para p {
@@ -163,6 +172,38 @@ section {
     font-size: 15px;
 }
 
+    /* za one kocke 4 ispod kod (ova 2 boxc i box) */
+
+.count .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    align-items: flex-start;    
+    padding-top: 50px;
+}
+
+.count .box-container .box {
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    transition: 0.1s;
+    
+}
+
+.count .box-container .box i{
+    font-size: 50px;
+    color: var(--green);
+}
+
+
+.count .box-container .box:hover{
+    color: var(--white);
+    transform: scale(1.1);
+}
 
 
 
@@ -204,6 +245,12 @@ section {
 
 @media (max-width:768px) {
 
+    .home .row .image{
+        display: none;
+    }
+    
+   
+
 
     #menu-btn{
         margin-right: 0px;
@@ -233,10 +280,25 @@ section {
         display: block;
         margin: 20px;
     }
+
+    .home .para p {
+
+        font-size: 15px;
+    }
+    
 }
 
 @media (max-width:450px) {
 
+        
+    .home .para p {
+
+        font-size: 10px;
+    }
+
+    .img {
+        padding-left: 350px;
+    }
 
 }
 
