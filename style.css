@@ -88,6 +88,7 @@ section {
     right: 0;
     z-index: 1000;
     background-color: var(--light-bg);
+    height: 90px;
  
 }
 
@@ -254,10 +255,10 @@ section {
 
 .courses h1{
     margin-bottom: 20px;
+    margin-top: 120px;
     font-size: 60px;
     color:var(--white);
     padding-left: 370px;
-    padding-top: 50px;
 }
 
 .courses h1 span {
@@ -330,25 +331,59 @@ section {
 
   /* Teachers */
 
+.teacher {
+    width: 100%;
+}
+
   .teacher h1{
     margin-bottom: 20px;
-    font-size: 60px;
+    font-size: 50px;
     color:var(--white);
-    padding-left: 370px;
-    padding-top: 50px;
+    margin-left: 400px;
+    margin-top: 50px;
 }
 
 .teacher h1 span {
     color: var(--green);
 }
 
+.teacher .wrapper .teach {
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 0 15px var(--green);
+    background-color: var(--green);
+    margin: 20px 0 20px 16px;
+   
+}
 
-  
+.teacher .wrapper .teach:hover {
+    box-shadow: 0 0 15px var(--blue);
+    transform: scale(1.4);
+}
+
+.teacher .wrapper .teach a {
+    color: var(--white);
+}
+
+.teacher .wrapper .teach a:hover {
+    transform: scale(1.1);
+    color: var(--light-bg);
+}
+
+.teacher .wrapper .teach img {
+    height: 250px;
+    width: 250px;
+}
+
+.teacher .wrapper .teach h3 {
+    color: var(--white);
+}
 
 
 
-
-
+/* Reviews */ 
 
 
 
